@@ -1,6 +1,6 @@
 public class BaseballCoach implements Coach {
 
-    private  final FortuneService fortuneService;
+    private final FortuneService fortuneService;
 
     public BaseballCoach(FortuneService fortuneService) {
         this.fortuneService = fortuneService;
@@ -10,7 +10,7 @@ public class BaseballCoach implements Coach {
         return "Run to the base!";
     }
 
-    public String getDailyFortune(){
+    public String getDailyFortune() {
         return fortuneService.getFortuneMessage();
     }
 }
