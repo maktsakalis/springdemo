@@ -10,6 +10,8 @@
 
     <bean class="BaseballCoach" id="myCoach">
         <constructor-arg ref="myFortuneService"/>
+        <property name="emailAddress" value="mak@mail.com"/>
+        <property name="type" value="human"/>
     </bean>
 
 
